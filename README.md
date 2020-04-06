@@ -1,5 +1,10 @@
 # homework-wk5
-calendar
+Daily Task Calendar
+
+- I was able to create a function to load the input value to local storage and store it
+- I'm having issues with moment api. Will work on it further when I get it running and add the remaining code for the color change
+
+- this homework was a bit easier than the previous ones in my opinion. maybe because jquery is easy to understand or im just slowly learning javascript
 
 =========================================
 # 05 Third-Party APIs: Work Day Scheduler
