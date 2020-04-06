@@ -71,7 +71,13 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-.saveIcon {
+.input-group-text {
+  align-items: center;
+  background-color: greenyellow;
+  color: black;
+}
+
+#saveIcon {
   height: 30px;
   width: 30px;
 }
