@@ -8,10 +8,12 @@ var currentSecond = date.getSeconds()
 // var task = localStorage.getItem("task")
 
 //currentMonth has values 1-12, currentDay has values 1-31, currentHour... etc.
-console.log(currentMonth, currentDay, currentHour, currentMinute, currentSecond)
+console.log(date, currentMonth, currentDay, currentHour, currentMinute, currentSecond)
+console.log(Date())
 
 $(document).ready(function () {
     //load settings
+    updateDate();
     loadTasks();
 
 // click function for saving
@@ -31,7 +33,6 @@ function dailyTaskInput() {
     localStorage.task3pm = $('#task-3pm').val();
     localStorage.task4pm = $('#task-4pm').val();
     localStorage.task5pm = $('#task-5pm').val();
-
 }
 
 // function to load local storage data
@@ -45,13 +46,14 @@ function loadTasks() {
     $('#task-3pm').val(localStorage.task3pm);
     $('#task-4pm').val(localStorage.task4pm);
     $('#task-5pm').val(localStorage.task5pm);
-    
 }
 
 });
 
+// adding current date to the header
 
-// need fuction for storing to local data
-
+function updateDate() {
+    $("#currentDay").append(date)
+}
 
 // Function for changing color when time passes, is present and for
