@@ -4,15 +4,17 @@ var currentDay = date.getDate();
 var currentHour = date.getHours();
 var currentMinute = date.getMinutes();
 var currentSecond = date.getSeconds()
+var test = moment().format('dddd');
 
 // var task = localStorage.getItem("task")
 
 //currentMonth has values 1-12, currentDay has values 1-31, currentHour... etc.
 console.log(date, currentMonth, currentDay, currentHour, currentMinute, currentSecond)
-console.log(Date())
+console.log(test)
 
 $(document).ready(function () {
     //load settings
+    imgSaveIcon();
     updateDate();
     loadTasks();
 
@@ -55,5 +57,7 @@ function loadTasks() {
 function updateDate() {
     $("#currentDay").append(date)
 }
+
+// add save icon to buttons
 
 // Function for changing color when time passes, is present and for
