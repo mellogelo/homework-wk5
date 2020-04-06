@@ -17,14 +17,35 @@ $(document).ready(function () {
 // click function for saving
 $(".btn").on("click", function() {
     event.preventDefault();
-    localStorage.task = $('#taskInput').val();
-    // var task = document.getElementById('taskInput').value;
-    // localStorage.setItem("task", task);
+    dailyTaskInput();
 });
+
+//function for saving input value to local storage
+function dailyTaskInput() {
+    localStorage.task9am = $('#task-9am').val();
+    localStorage.task10am = $('#task-10am').val();
+    localStorage.task11am = $('#task-11am').val();
+    localStorage.task12pm = $('#task-12pm').val();
+    localStorage.task1pm = $('#task-1pm').val();
+    localStorage.task2pm = $('#task-2pm').val();
+    localStorage.task3pm = $('#task-3pm').val();
+    localStorage.task4pm = $('#task-4pm').val();
+    localStorage.task5pm = $('#task-5pm').val();
+
+}
 
 // function to load local storage data
 function loadTasks() {
-    $('#taskInput').val(localStorage.task);
+    $('#task-9am').val(localStorage.task9am);
+    $('#task-10am').val(localStorage.task10am);
+    $('#task-11am').val(localStorage.task11am);
+    $('#task-12pm').val(localStorage.task12pm);
+    $('#task-1pm').val(localStorage.task1pm);
+    $('#task-2pm').val(localStorage.task2pm);
+    $('#task-3pm').val(localStorage.task3pm);
+    $('#task-4pm').val(localStorage.task4pm);
+    $('#task-5pm').val(localStorage.task5pm);
+    
 }
 
 });
