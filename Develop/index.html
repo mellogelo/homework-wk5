@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -33,73 +34,77 @@
       <!-- 9 am -->
       <div class="input-group input-group-lg">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+          <span class="input-group-text" id="inputGroup-sizing-lg">9am</span>
         </div>
-        <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-        <button id="save">Save</button>
+        <input type="text" class="form-control" id="taskInput" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <button class="btn btn-outline-secondary" type="button">Save</button>
       </div>
       <!-- 10 am -->
       <div class="input-group input-group-lg">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+          <span class="input-group-text" id="inputGroup-sizing-lg">10am</span>
         </div>
-        <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-        <button id="save">Save</button>
+        <input type="text" class="form-control" id="taskInput" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <button class="btn btn-outline-secondary" type="button">Save</button>
       </div>
       <!-- 11 am -->
       <div class="input-group input-group-lg">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+          <span class="input-group-text" id="inputGroup-sizing-lg">11am</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-        <button id="save">Save</button>
+        <button class="btn btn-outline-secondary" type="button">Save</button>
       </div>
       <!-- 12 pm -->
       <div class="input-group input-group-lg">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+          <span class="input-group-text" id="inputGroup-sizing-lg">12pm</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-        <button id="save">Save</button>
+        <button class="btn btn-outline-secondary" type="button">Save</button>
       </div>
       <!-- 1 pm -->
       <div class="input-group input-group-lg">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+          <span class="input-group-text" id="inputGroup-sizing-lg">1pm</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-        <button id="save">Save</button>
+        <button class="btn btn-outline-secondary" type="button">Save</button>
       </div>
       <!-- 2 pm -->
       <div class="input-group input-group-lg">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+          <span class="input-group-text" id="inputGroup-sizing-lg">2pm</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-        <button id="save">Save</button>
+        <button class="btn btn-outline-secondary" type="button">Save</button>
       </div>
       <!-- 3 pm -->
       <div class="input-group input-group-lg">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+          <span class="input-group-text" id="inputGroup-sizing-lg">3pm</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-        <button id="save">Save</button>
+        <button class="btn btn-outline-secondary" type="button">Save</button>
       </div>
       <!-- 4 pm -->
       <div class="input-group input-group-lg">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+          <span class="input-group-text" id="inputGroup-sizing-lg">4pm</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-        <button id="save">Save</button>
+        <button class="btn btn-outline-secondary" type="button">Save</button>
       </div>
-
-
-
+      <!-- 5 pm -->
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">5pm</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <button class="btn btn-outline-secondary" type="button">Save</button>
+      </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
