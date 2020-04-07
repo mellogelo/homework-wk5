@@ -12,7 +12,6 @@ console.log(date, currentMonth, currentDay, currentHour, currentMinute, currentS
 
 $(document).ready(function () {
     //load settings
-    updateDate();
     loadTasks();
 
 // click function for saving
@@ -47,13 +46,14 @@ function loadTasks() {
     $('#task-5pm').val(localStorage.task5pm);
 }
 
+
 });
 
 // adding current date to the header
 
-function updateDate() {
-    $("#currentDay").append(date);
-}
+// function updateDate() {
+//     $("#currentDay").append(date);
+// }
 
 // add save icon to buttons
 
